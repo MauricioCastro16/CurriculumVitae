@@ -342,3 +342,117 @@ textarea {
     font-size: 14px;
     color: #c7d2fe
 }
+
+/* ====== Ajustes móviles ====== */
+@media (max-width: 768px) {
+
+    .nav {
+        gap: 10px;
+        padding: 10px 14px;
+        flex-wrap: wrap
+    }
+
+    .nav a {
+        font-size: 14px
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin: 12px auto 0
+    }
+
+    .hero .intro {
+        padding: 18px
+    }
+
+    h1 {
+        font-size: clamp(24px, 6vw, 30px)
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 12px
+    }
+
+    .badges {
+        gap: 6px;
+        margin: 8px 0 12px
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 5px 8px
+    }
+
+    .profile {
+        padding: 16px
+    }
+
+    .profile .frame {
+        width: 220px;
+        max-width: 70vw;
+        border-radius: 18px
+    }
+
+    .profile img {
+        inset: 6px;
+        border-radius: 14px
+    }
+
+    .ring {
+        inset: -4px;
+        filter: blur(10px);
+        opacity: .45
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 18px auto;
+        padding: 0 14px
+    }
+
+    section {
+        padding: 16px
+    }
+
+    ul {
+        margin-left: 16px
+    }
+
+    table {
+        font-size: 14px
+    }
+
+    th,
+    td {
+        padding: 8px
+    }
+
+    .cta {
+        gap: 10px
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 14px
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+        padding: 12px
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px
+    }
+
+    .actions .note {
+        font-size: 13px
+    }
+}
